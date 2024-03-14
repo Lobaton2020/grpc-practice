@@ -1,0 +1,21 @@
+{
+  "name": "orders-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts --exec ts-node src/index.ts -e ts,proto"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.2",
+    "@grpc/proto-loader": "^0.7.10"
+  }
+}

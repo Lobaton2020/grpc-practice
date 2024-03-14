@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package notification;
+
+service Notification {
+    rpc SendSms(SmsPayload) returns (CallResponse) {}
+    rpc SendEmail(EmailPayload) returns (CallResponse) {}
+}
+
+message EmailPayload {
+    string email = 1;
+}
+
+message CallResponse {
+    bool is_error = 2;
+}
+
+message SmsPayload {
+    string name = 3;
+}
